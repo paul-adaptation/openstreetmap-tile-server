@@ -108,7 +108,7 @@ RUN python -c 'import mapnik'
 
 # Install mod_tile and renderd
 WORKDIR /home/renderer/src
-RUN git clone -b zoom https://github.com/SomeoneElseOSM/mod_tile.git
+RUN git clone -b zoom https://github.com/paul-adaptation/mod_tile.git
 WORKDIR /home/renderer/src/mod_tile
 RUN ./autogen.sh \
   && ./configure \
